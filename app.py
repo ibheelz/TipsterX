@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Load environment variables
 WHATSAPP_API_URL = "https://graph.facebook.com/v20.0/523844200821726/messages"
-ACCESS_TOKEN = os.getenv("WHATSAPP_ACCESS_TOKEN")
+ACCESS_TOKEN = os.getenv("EAAJhaUx0YZAkBO4lziwdwagb5N7yjICQ8WTtGnVirjiHWH4ZBWh8hdEVek4KBNUWqCp9PjX2W8uEzCkSnYHjM6sabmZBcDZA91cs7GBiBGZCOZC7hJMXZB0OOpAHKU3sZAkmhvV7J6BTBApmcwCh9fLUfYEEwa9dKwlbCVgg6b4RclDq1qQsxqbi6ipNSiNhs9tqUJX13p0KRQlvAGitZAZB551mL13wZAshv93XAmU")
 
 @app.route("/webhook", methods=["POST"])
 def webhook():
